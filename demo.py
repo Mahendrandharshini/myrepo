@@ -13,4 +13,4 @@ if __name__ == "__main__":
     hello_instance = Hello()
     print(hello_instance.greet())
     print(hello_instance.farewell())
-    print(hello_instance.custom_message("This is a custom message."))
+    

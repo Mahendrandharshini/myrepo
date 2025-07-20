@@ -5,10 +5,17 @@ class Hello:
     def farewell(self):
         return "Goodbye, World!"
     
-if __name__ == "__main__":
-    hello = Hello()
-    print(hello.greet())
-    print(hello.farewell())
 
-# This is a simple demonstration of a class with greeting methods.
-# You can run this script to see the output of the greet and farewell methods.
+    def custom_message(self, message):
+        return f"Message: {message}"
+    
+    def __str__(self):
+        return "This is a Hello class instance."
+    
+# Example usage
+if __name__ == "__main__":
+    hello_instance = Hello()
+    print(hello_instance.greet())
+    print(hello_instance.farewell())
+    print(hello_instance.custom_message("This is a custom message."))
+# myrepo/demo.py

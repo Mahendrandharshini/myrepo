@@ -5,6 +5,7 @@ class Hello:
     def farewell(self):
         return "Goodbye, World!"
     
+
     def custom_message(self, message):
         return f"Message: {message}"
     
@@ -18,4 +19,3 @@ if __name__ == "__main__":
     print(hello_instance.farewell())
     print(hello_instance.custom_message("This is a custom message."))
 # myrepo/demo.py
-    

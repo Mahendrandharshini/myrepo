@@ -1,18 +1,18 @@
-name : branch push workflow
+name: Deploy to Server
 
-on : 
-  push : 
-    branches : 
-      - feature
-jobs : 
-  testing :
-    runs-on : ubuntu-latest
+on:
+  push:
+    branches:
+      - main
 
-    steps : 
-      - name : Checkout Code
-        uses : actions/checkout@v3
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-      - name : Say mahi
-        run : |
-          echo "Hello Mahendran"
-  
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Deploy Script
+        run: |
+          echo "Deploying app..."

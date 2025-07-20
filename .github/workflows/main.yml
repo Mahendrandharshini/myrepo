@@ -1,0 +1,15 @@
+name : My first workflow
+
+on : [push]
+
+jobs :
+  greet :
+    runs-on : ubuntu-latest
+
+    steps : 
+      - name : Checkout Code
+        uses : actions/checkout@v3
+
+      - name : Run as Script
+        run : echo "Hello, World"
+

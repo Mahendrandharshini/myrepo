@@ -1,18 +1,16 @@
-name: Deploy to Server
+name: Run on Feature Branch
 
 on:
   push:
     branches:
-      - main
+      - feature
 
 jobs:
-  deploy:
+  run-feature-job:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy Script
-        run: |
-          echo "Deploying app..."
+      - name: Print branch info
+        run: echo "This job runs only when code is pushed to 'feature' branch"

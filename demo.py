@@ -19,3 +19,5 @@ if __name__ == "__main__":
     print(hello_instance.farewell())
     print(hello_instance.custom_message("This is a custom message."))
 # myrepo/demo.py
+#adding for testing
+    print(hello_instance)

@@ -8,6 +8,9 @@ class Hello:
     def custom_message(self, message):
         return f"Message: {message}"
     
+    def __str__(self):
+        return "This is a Hello class instance."
+    
 # Example usage
 if __name__ == "__main__":
     hello_instance = Hello()
